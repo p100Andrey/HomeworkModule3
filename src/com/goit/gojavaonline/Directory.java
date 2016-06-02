@@ -15,9 +15,10 @@ public class Directory {
     public void setFiles(List<File> files) {
         this.files = files;
     }
-    String nameFile4;
 
-    Directory (){
-        nameFile4 = "Directory";
+    String nameDirectory;
+
+    Directory (String directory){
+        this.nameDirectory = directory;
     }
 }

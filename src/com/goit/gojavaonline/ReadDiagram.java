@@ -5,16 +5,16 @@ package com.goit.gojavaonline;
  */
 public class ReadDiagram {
     public static void main(String[] args){
-        AudioFile nameFile1 = new AudioFile();
-        TextFile nameFile2 = new TextFile();
-        ImageFile nameFile3 = new ImageFile();
-        Directory nameFile4 = new Directory();
-        File nameFile5 = new File();
+        AudioFile nameAudioFile = new AudioFile("Аудио файл");
+        TextFile nameTextFile = new TextFile("Текстовый файл");
+        ImageFile nameImageFile = new ImageFile("Файл изображения");
+        Directory nameDirectory = new Directory("Директория");
+        File nameFile = new File();
 
-        System.out.print("Название всех файлов в данной диаграмме: 1." + nameFile1.nameFile1 + ";"
-                + " 2." + nameFile2.nameFile2 + ";"
-                + " 3." + nameFile3.nameFile3 + ";"
-                + " 4." + nameFile4.nameFile4 + ";"
-                + " 5." + nameFile5.nameFile5 + ".");
-    }
+        System.out.print("Название всех классов в данной диаграмме: 1." + nameAudioFile.nameAudioFile + ";"
+                + " 2." + nameTextFile.nameTextFile + ";"
+                + " 3." + nameImageFile.nameImageFile + ";"
+                + " 4." + nameDirectory.nameDirectory + ";"
+                + " 5." + nameFile.nameFile + ".");
+}
 }

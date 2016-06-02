@@ -1,8 +1,6 @@
 package com.goit.gojavaonline;
 
-/**
- * Created by Andrey.Masuk on 02.06.2016.
- */
+
 public class ReadDiagram {
     public static void main(String[] args){
         AudioFile nameAudioFile = new AudioFile("Аудио файл");

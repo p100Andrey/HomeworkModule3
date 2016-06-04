@@ -2,9 +2,10 @@ package com.goit.gojavaonline;
 
 
 public class ImageFile extends File {
-    String nameImageFile;
+    private String image;
 
-    ImageFile (String imageFile){
-       this.nameImageFile = imageFile;
+    public ImageFile(String imagePreview) {
+        super(imagePreview);
+        this.image = imagePreview;
     }
 }

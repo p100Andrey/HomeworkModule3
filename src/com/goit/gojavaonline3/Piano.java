@@ -1,7 +1,12 @@
 package com.goit.gojavaonline3;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
+
 public class Piano extends MusicalInstrument {
+    private String instrument;
+
+    public Piano(String piano) {
+        super(piano);
+        this.instrument = piano;
+    }
 }
+

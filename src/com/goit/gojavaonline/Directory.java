@@ -14,9 +14,9 @@ public class Directory {
         this.files = files;
     }
 
-    String nameDirectory;
+    String name;
 
-    Directory (String directory){
-        this.nameDirectory = directory;
+    Directory(String directory) {
+        this.name = directory;
     }
 }

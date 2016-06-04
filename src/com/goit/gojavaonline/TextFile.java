@@ -2,9 +2,10 @@ package com.goit.gojavaonline;
 
 
 public class TextFile extends File {
-    String nameTextFile;
+    private String text;
 
-    TextFile (String textFile){
-        this.nameTextFile = textFile;
+    public TextFile(String textFile) {
+        super(textFile);
+        this.text = textFile;
     }
 }

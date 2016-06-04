@@ -1,7 +1,11 @@
 package com.goit.gojavaonline2;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
+
 public class Tulip extends Flower {
+    private String tulip;
+
+    public Tulip(String tulipFlower) {
+        super(tulipFlower);
+        this.tulip = tulipFlower;
+    }
 }

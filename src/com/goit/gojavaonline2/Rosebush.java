@@ -2,11 +2,18 @@ package com.goit.gojavaonline2;
 
 import java.util.List;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
 public class Rosebush {
     private List<Rose> roses;
+
+    private String bushage;
+
+    public String getBushage() {
+        return bushage;
+    }
+
+    public void setBushage(String bushage) {
+        this.bushage = bushage;
+    }
 
     public List<Rose> getRoses() {
         return roses;
@@ -14,5 +21,17 @@ public class Rosebush {
 
     public void setRoses(List<Rose> roses) {
         this.roses = roses;
+    }
+    String namesbush;
+
+    Rosebush(String rosesbush) {
+        this.namesbush = rosesbush;
+    }
+    public void bushBrand() {
+        System.out.println(namesbush + " - сорт данного куста");
+    }
+    @Override
+    public String toString() {
+        return namesbush + ", возраст куста: " + bushage;
     }
 }

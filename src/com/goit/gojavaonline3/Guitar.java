@@ -1,7 +1,11 @@
 package com.goit.gojavaonline3;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
+
 public class Guitar extends MusicalInstrument {
+    private String instrument;
+
+    public Guitar(String guitar) {
+        super(guitar);
+        this.instrument = guitar;
+    }
 }

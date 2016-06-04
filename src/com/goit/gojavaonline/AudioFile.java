@@ -1,12 +1,27 @@
 package com.goit.gojavaonline;
 
-import javax.lang.model.element.Name;
-
-
 public class AudioFile extends File {
-    String nameAudioFile;
 
-    AudioFile (String textFile){
-        this.nameAudioFile = textFile;
+    private String author;
+
+    public AudioFile(String name) {
+        super(name);
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void play() {
+        System.out.println(name + " is played");
+    }
+
+    @Override
+    public String toString() {
+        return name + ", author: " + author;
     }
 }

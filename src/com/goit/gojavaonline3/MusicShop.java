@@ -2,11 +2,8 @@ package com.goit.gojavaonline3;
 
 import java.util.List;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
 public class MusicShop {
-   private List<MusicalInstrument> musicalInstruments;
+    private List<MusicalInstrument> musicalInstruments;
 
     public List<MusicalInstrument> getMusicalInstruments() {
         return musicalInstruments;
@@ -14,5 +11,10 @@ public class MusicShop {
 
     public void setMusicalInstruments(List<MusicalInstrument> musicalInstruments) {
         this.musicalInstruments = musicalInstruments;
+    }
+    String name;
+
+    MusicShop(String musicshop) {
+        this.name = musicshop;
     }
 }

@@ -2,9 +2,17 @@ package com.goit.gojavaonline;
 
 
 public class File {
-    String nameFile;
+    protected String name;
 
-    File (){
-        nameFile = "File";
+    public File(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

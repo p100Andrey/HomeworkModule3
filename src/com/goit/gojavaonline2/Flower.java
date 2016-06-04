@@ -1,9 +1,18 @@
 package com.goit.gojavaonline2;
 
-import java.util.List;
 
-/**
- * Created by Andrey.Masuk on 28.05.2016.
- */
 public class Flower {
+    protected String nameFlower;
+
+    public String getNameFlower() {
+        return nameFlower;
+    }
+
+    public void setNameFlower(String nameFlower) {
+        this.nameFlower = nameFlower;
+    }
+
+    public Flower(String nameFlower) {
+        this.nameFlower = nameFlower;
+    }
 }

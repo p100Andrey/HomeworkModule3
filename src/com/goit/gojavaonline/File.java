@@ -1,7 +1,6 @@
 package com.goit.gojavaonline;
 
-
-public class File {
+public abstract class File {
     protected String name;
 
     public File(String name) {

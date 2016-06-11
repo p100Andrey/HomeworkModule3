@@ -2,17 +2,17 @@ package com.goit.gojavaonline2;
 
 
 public class Flower {
-    protected String nameFlower;
+    public String flower;
 
-    public String getNameFlower() {
-        return nameFlower;
+    public String getflower() {
+        return flower;
     }
 
-    public void setNameFlower(String nameFlower) {
-        this.nameFlower = nameFlower;
+    public void setflower(String flower) {
+        this.flower = flower;
     }
 
-    public Flower(String nameFlower) {
-        this.nameFlower = nameFlower;
+    public Flower(String flower) {
+        this.flower = flower;
     }
 }

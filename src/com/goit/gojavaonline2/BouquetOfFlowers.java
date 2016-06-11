@@ -1,9 +1,16 @@
 package com.goit.gojavaonline2;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BouquetOfFlowers {
+    private String name;
     private List<Flower> flowers;
+
+    public BouquetOfFlowers(String bouqet) {
+        this.name = bouqet;
+        flowers = new ArrayList<>();
+    }
 
     public List<Flower> getFlowers() {
         return flowers;
@@ -11,10 +18,13 @@ public class BouquetOfFlowers {
 
     public void setFlowers(List<Flower> flowers) {
         this.flowers = flowers;
-    }
-    String name;
 
-    BouquetOfFlowers(String bouqet) {
-        this.name = bouqet;
+    }
+    public String getName() {
+        return name;
+    }
+
+    public void addFlower (Flower flower){
+        flowers.add(flower);
     }
 }

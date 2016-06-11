@@ -1,9 +1,16 @@
 package com.goit.gojavaonline3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MusicShop {
+    private String name;
     private List<MusicalInstrument> musicalInstruments;
+
+    public MusicShop(String musicshop) {
+        this.name = musicshop;
+        musicalInstruments = new ArrayList<>();
+    }
 
     public List<MusicalInstrument> getMusicalInstruments() {
         return musicalInstruments;
@@ -12,9 +19,16 @@ public class MusicShop {
     public void setMusicalInstruments(List<MusicalInstrument> musicalInstruments) {
         this.musicalInstruments = musicalInstruments;
     }
-    String name;
 
-    MusicShop(String musicshop) {
-        this.name = musicshop;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void addMusicalInstrument(MusicalInstrument instrument) {
+        musicalInstruments.add(instrument);
     }
 }

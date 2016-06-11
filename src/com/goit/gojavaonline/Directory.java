@@ -1,10 +1,16 @@
 package com.goit.gojavaonline;
 
+import java.util.ArrayList;
 import java.util.List;
 
-
 public class Directory {
+    private String name;
     private List<File> files;
+
+    public Directory(String directory) {
+        this.name = directory;
+        files = new ArrayList<>();
+    }
 
     public List<File> getFiles() {
         return files;
@@ -14,9 +20,11 @@ public class Directory {
         this.files = files;
     }
 
-    String name;
+    public String getName() {
+        return name;
+    }
 
-    Directory(String directory) {
-        this.name = directory;
+    public void addFile(File file){
+        files.add(file);
     }
 }

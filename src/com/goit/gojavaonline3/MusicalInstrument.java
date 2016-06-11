@@ -13,26 +13,26 @@ public class MusicalInstrument {
         this.brend = brend;
     }
 
-    protected String nameinstrument;
+    protected String instrument;
 
     public String getNameinstrument() {
-        return nameinstrument;
+        return instrument;
     }
 
-    public void setNameinstrument(String nameinstrument) {
-        this.nameinstrument = nameinstrument;
+    public void setNameinstrument(String instrument) {
+        this.instrument = instrument;
     }
 
     public MusicalInstrument(String name) {
-        this.nameinstrument = name;
+        this.instrument = name;
     }
 
     public void price() {
-        System.out.println(nameinstrument + ": MUSIC");
+        System.out.println(instrument + ": MUSIC");
     }
 
     @Override
     public String toString() {
-        return nameinstrument + ", Open: " + brend;
+        return instrument + ", Open: " + brend;
     }
 }

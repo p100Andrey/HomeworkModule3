@@ -24,6 +24,14 @@ public class Rosebush {
     }
     String namesbush;
 
+    public String getNamesbush() {
+        return namesbush;
+    }
+
+    public void setNamesbush(String namesbush) {
+        this.namesbush = namesbush;
+    }
+
     Rosebush(String rosesbush) {
         this.namesbush = rosesbush;
     }

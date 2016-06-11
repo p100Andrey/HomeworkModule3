@@ -4,8 +4,8 @@ public class AudioFile extends File {
 
     private String author;
 
-    public AudioFile(String name) {
-        super(name);
+    public AudioFile(String audioFile) {
+        super(audioFile);
     }
 
     public String getAuthor() {
